@@ -18,9 +18,9 @@ class Calculator{
         return this.number1 * this.number2;
     }
 };
-const numbers = new Calculator (24, 15);
-const calculate1=numbers.Add();
-const calculate2=numbers.substract();
+const numbers = new Calculator(24, 15);
+const calculate1 = numbers.Add();
+const calculate2 = numbers.substract();
 console.log(calculate1);
 console.log(calculate2);
 
