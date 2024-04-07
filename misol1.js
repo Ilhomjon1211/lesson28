@@ -3,25 +3,24 @@ class Calculator{
     substraction;
     multiplication;
     division;
-    constructor(add, substraction, multiplication, division){
-        this.add = add;
-        this.substraction = substraction;
-        this.multiplication = multiplication;
-        this.division = division;
+    constructor(number1, number2){
+        this.number1 = number1;
+        this.number2 = number2;
 
     }
     Add(){
-        return this.add + this.substraction;
+        return this.number1 + this.number2;
     }
-    Multiple(){
-        return this.multiplication * this.division;
+    substract(){
+        return this.number1 - this.number2;
+    }
+    multiple(){
+        return this.number1 * this.number2;
     }
 };
-const result1 = new Calculator (2, 24, 25, 63);
-console.log(result1.add + result1.substraction);
-console.log("-=-=-=-=-=-=-=-=-=-");
-console.log(result1.Add());
+const numbers = new Calculator (24, 15);
+const calculate1=numbers.Add();
+const calculate2=numbers.substract();
+console.log(calculate1);
+console.log(calculate2);
 
-console.log(result1.multiplication * result1.division);
-console.log("-=-=-=-=-=-=-=-=-=-");
-console.log(result1.Multiple());
